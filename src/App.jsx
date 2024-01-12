@@ -9,7 +9,7 @@ import { useEffect, useState } from "react"
 
 function App() {
 
-  const [noticia, setnoticia] = useState({})
+  const [noticias, setNoticias] = useState([])
 
 
   /* solicitud solo en montaje, no en actualizacion de estado , ni en actualizacion especifica */
@@ -25,7 +25,7 @@ function App() {
     console.log(respuesAPI)
     console.log(datos)
     /* me dio de resultado el array q es lo q esos pasos saben devolver , son 10 como especifica en este caso esta API de noticias  */
-    setnoticia(datos[0])
+    setNoticias(datos.results)
   }
 /*  */
   return (
@@ -35,7 +35,7 @@ function App() {
       <div className="mt-5 text-center" >
         <Image src={TucuNews} fluid />
       </div>
-      <News noticia={noticia} />
+      <News noticias={noticias} />
      </Container>
      <Footer/>
     </>
