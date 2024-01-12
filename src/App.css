@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch&family=Italianno&family=Noto+Sans+Mongolian&family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 /* Fuentes
 font-family: 'Grenze Gotisch',
@@ -9,6 +10,8 @@ font-family: 'Noto Sans Mongolian',
 sans-serif;
 font-family: 'Pirata One',
 system-ui;
+font-family: 'Bebas Neue',
+sans-serif;
 */
 
 /* Color
@@ -26,9 +29,8 @@ system-ui;
 }
 
 h1{
-  font-family: 'Pirata One',
-      system-ui;
-      text-align: center;
+font-family: 'Bebas Neue',
+    sans-serif;
 }
 
 body{
