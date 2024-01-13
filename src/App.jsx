@@ -43,7 +43,7 @@ function App() {
     <>
       <Titulos/>
      <Container fluid className="main">
-      <div className="mt-5 text-center" >
+      <div className="mt-5 pt-5 text-center" >
         <Image src={TucuNews} fluid />
       </div>
       <News noticias={noticias} />
