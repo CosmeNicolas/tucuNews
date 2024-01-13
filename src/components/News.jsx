@@ -1,9 +1,9 @@
-import React from 'react';
-import { Container, Image, Card, Button, Col, Row, ListGroup } from 'react-bootstrap';
+import { Container, Image, Card, Button, Col, Row} from 'react-bootstrap';
 
 const News = ({ noticias }) => {
   return (
-    <>    <Container className=''>
+    <>   
+     <Container className=''>
       <hr />
       <h1 className='text-center' >It's Happening  📰</h1>
       <br />

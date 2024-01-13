@@ -3,8 +3,8 @@ import './App.css'
 import { useEffect, useState } from "react"
 import { Container } from 'react-bootstrap'
 import Footer from "./components/Footer"
-import News from "./components/News"
 import Titulos from "./components/Titulos"
+import Formulario from "./components/Formulario"
 import ImagenTucuNews from "./components/ImagenTucuNews"
 
 
@@ -44,7 +44,7 @@ function App() {
       <Titulos/>
      <Container fluid className="main">
       <ImagenTucuNews/>
-      <News noticias={noticias} />
+      <Formulario noticias={noticias} />
      </Container>
      <Footer/>
     </>
