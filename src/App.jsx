@@ -5,13 +5,11 @@ import Footer from "./components/Footer"
 import News from "./components/News"
 import TucuNews from "./assets/TheTucu-News-sf.png"
 import { useEffect, useState } from "react"
+import Titulos from "./components/Titulos"
 
 
 function App() {
-
   const [noticias, setNoticias] = useState([])
-
-
   /* solicitud solo en montaje, no en actualizacion de estado , ni en actualizacion especifica */
   useEffect(() => {
    consultaApi()
@@ -43,8 +41,8 @@ function App() {
 /*  */
   return (
     <>
-     <Container  className="main">
-      
+      <Titulos/>
+     <Container fluid className="main">
       <div className="mt-5 text-center" >
         <Image src={TucuNews} fluid />
       </div>
