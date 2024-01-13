@@ -15,14 +15,10 @@ const News = ({ noticias }) => {
                 <Image src={noticia.image_url} className='img-fluid img-new' />
                 <Card.Body>
                   <Card.Title>{noticia.title}</Card.Title>
-                  <Card.Text>
-                    {noticia.description}
-                    <ListGroup className="list-group-flush">
-                      <ListGroup.Item>
-                        Author: <em>{noticia.creator} - {noticia.country}</em>
-                      </ListGroup.Item>
-                    </ListGroup >
-                  </Card.Text>
+                  <p>{noticia.description}</p>
+                  <p> Author: 
+                  <em>{noticia.creator} - {noticia.country}</em>
+                  </p>
                 </Card.Body>
                 <Card.Footer className='text-center fondo-footer'>
                   <Button variant="dark" >Read</Button>
