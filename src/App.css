@@ -36,3 +36,21 @@ font-family: 'Bebas Neue',
 body{
   background-color: #D9D9D9;
 }
+
+@media (min-width: 992px) {
+  .img-new {
+    height: 450px;
+    /* Ajusta el tamaño de altura según tus necesidades */
+    width: 650px;
+    /* Ajusta el tamaño de ancho según tus necesidades */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .img-new {
+    height: 400px;
+    /* Ajusta el tamaño de altura según tus necesidades */
+    width: 400px;
+    /* Ajusta el tamaño de ancho según tus necesidades */
+  }
+}
