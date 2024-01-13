@@ -1,11 +1,11 @@
 import "bootstrap/dist/css/bootstrap.min.css"
 import './App.css'
-import { Container, Image } from 'react-bootstrap'
+import { useEffect, useState } from "react"
+import { Container } from 'react-bootstrap'
 import Footer from "./components/Footer"
 import News from "./components/News"
-import TucuNews from "./assets/TheTucu-News-sf.png"
-import { useEffect, useState } from "react"
 import Titulos from "./components/Titulos"
+import ImagenTucuNews from "./components/ImagenTucuNews"
 
 
 function App() {
@@ -43,9 +43,7 @@ function App() {
     <>
       <Titulos/>
      <Container fluid className="main">
-      <div className="mt-5 pt-5 text-center" >
-        <Image src={TucuNews} fluid />
-      </div>
+      <ImagenTucuNews/>
       <News noticias={noticias} />
      </Container>
      <Footer/>
