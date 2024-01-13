@@ -12,11 +12,11 @@ function App() {
   const [noticias, setNoticias] = useState([])
   /* solicitud solo en montaje, no en actualizacion de estado , ni en actualizacion especifica */
   useEffect(() => {
-   consultaApi()
+    consultaApi()
   }, [])
-  
+
   /* hago la peticion HTTP GET cons Async y Await */
-  const consultaApi = async ()=>{
+  const consultaApi = async () => {
 
     /* usamosTry/Catch para el manejo de errores  */
     /* tambien se usa en el backend */
@@ -30,23 +30,23 @@ function App() {
       setNoticias(datos.results)
     } catch (error) {
       console.log(error);
-     /*  {
-        <Alert key={variant} variant={warnign}>
-          Se rompeiron las maquinas impresoras y eso ya es noticia, volvé pronto
-        </Alert>
-      } */
+      /*  {
+         <Alert key={variant} variant={warnign}>
+           Se rompeiron las maquinas impresoras y eso ya es noticia, volvé pronto
+         </Alert>
+       } */
     }
 
   }
-/*  */
+  /*  */
   return (
     <>
-      <Titulos/>
-     <Container fluid className="main">
-      <ImagenTucuNews/>
-      <Formulario noticias={noticias} />
-     </Container>
-     <Footer/>
+      <Titulos />
+      <Container fluid className="main">
+        <ImagenTucuNews />
+        <Formulario noticias={noticias} />
+      </Container>
+      <Footer />
     </>
   )
 }

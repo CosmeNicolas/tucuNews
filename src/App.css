@@ -21,42 +21,39 @@ sans-serif;
   flex-direction: column;
 }
 
-.main{
+.main {
   flex-grow: 1;
 }
 
-h1{
-font-family: 'Bebas Neue',
+h1 {
+  font-family: 'Bebas Neue',
     sans-serif;
 }
 
-body{
+body {
   background-color: #D9D9D9;
 }
 
-.barraPrincipal{
+.barraPrincipal {
   color: #e6e4e4;
-  font-family: 'Pirata One',system-ui;
+  font-family: 'Pirata One', system-ui;
 }
 
-.footer{
-  background-color: #212427;;
+.footer {
+  background-color: #212427;
+  ;
 }
 
 @media (min-width: 992px) {
   .img-new {
     height: 450px;
-    /* Ajusta el tamaño de altura según tus necesidades */
     width: 650px;
-    /* Ajusta el tamaño de ancho según tus necesidades */
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .img-new {
     height: 400px;
-    /* Ajusta el tamaño de altura según tus necesidades */
     width: 400px;
-    /* Ajusta el tamaño de ancho según tus necesidades */
   }
 }
