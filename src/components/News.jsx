@@ -1,9 +1,4 @@
-
-
-import { Container, Image , Card, Col , Row} from 'react-bootstrap';
-
-
-
+import { Container, Image, Card, Col, Row } from 'react-bootstrap';
 
 const News = ({ noticias }) => {
   return (
