@@ -21,7 +21,7 @@ function App() {
     /* usamosTry/Catch para el manejo de errores  */
     /* tambien se usa en el backend */
     try {
-      const respuesAPI = await fetch('https://newsdata.io/api/1/news?apikey=pub_3632485f1de71f34f4409a4afc369bf6be35d&q=pizza');
+      const respuesAPI = await fetch('https://newsdata.io/api/1/news?apikey=pub_363241281d1aac4e63ea34d1f2c239bbb99df');
       /* extraigo los datos del body de la peticion  */
       const datos = await respuesAPI.json()
       console.log(respuesAPI)
