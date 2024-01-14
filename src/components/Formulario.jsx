@@ -34,7 +34,6 @@ const Formulario = ({ noticias, consultaApi, setElegirCategoria, elegirCategoria
         <option value="environment">Environment</option>
         <option value="food">Food</option>
         <option value="health">Health</option>
-        <option value="other">Other</option>
         <option value="politics">Politics</option>
         <option value="science">Science</option>
         <option value="sport">Sport</option>
