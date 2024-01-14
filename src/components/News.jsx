@@ -25,7 +25,6 @@ const News = ({ noticias }) => {
                           Read all note
                         </Button>
                       </Card.Footer>
-
                     </Card>
                   </Col>
                 ))
