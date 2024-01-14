@@ -1,29 +1,27 @@
 import "bootstrap/dist/css/bootstrap.min.css"
 import './App.css'
-import { Container, Image } from 'react-bootstrap'
-import Footer from "./components/Footer"
-import News from "./components/News"
-import TucuNews from "./assets/TheTucu-News-sf.png"
 import { useEffect, useState } from "react"
+import { Container } from 'react-bootstrap'
+import Footer from "./components/Footer"
+import Titulos from "./components/Titulos"
+import Formulario from "./components/Formulario"
+import ImagenTucuNews from "./components/ImagenTucuNews"
 
 
 function App() {
-
   const [noticias, setNoticias] = useState([])
-
-
   /* solicitud solo en montaje, no en actualizacion de estado , ni en actualizacion especifica */
   useEffect(() => {
-   consultaApi()
+    consultaApi()
   }, [])
-  
+
   /* hago la peticion HTTP GET cons Async y Await */
-  const consultaApi = async ()=>{
+  const consultaApi = async () => {
 
     /* usamosTry/Catch para el manejo de errores  */
     /* tambien se usa en el backend */
     try {
-      const respuesAPI = await fetch('https://newsdata.io/api/1/news?apikey=pub_3632485f1de71f34f4409a4afc369bf6be35d&q=pizza');
+      const respuesAPI = await fetch('https://newsdata.io/api/1/news?apikey=pub_363241281d1aac4e63ea34d1f2c239bbb99df&q=football');
       /* extraigo los datos del body de la peticion  */
       const datos = await respuesAPI.json()
       console.log(respuesAPI)
@@ -32,25 +30,23 @@ function App() {
       setNoticias(datos.results)
     } catch (error) {
       console.log(error);
-     /*  {
-        <Alert key={variant} variant={warnign}>
-          Se rompeiron las maquinas impresoras y eso ya es noticia, volvé pronto
-        </Alert>
-      } */
+      /*  {
+         <Alert key={variant} variant={warnign}>
+           Se rompeiron las maquinas impresoras y eso ya es noticia, volvé pronto
+         </Alert>
+       } */
     }
 
   }
-/*  */
+  /*  */
   return (
     <>
-     <Container  className="main">
-      
-      <div className="mt-5 text-center" >
-        <Image src={TucuNews} fluid />
-      </div>
-      <News noticias={noticias} />
-     </Container>
-     <Footer/>
+      <Titulos />
+      <Container fluid className="main">
+        <ImagenTucuNews />
+        <Formulario noticias={noticias} />
+      </Container>
+      <Footer />
     </>
   )
 }
