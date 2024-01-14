@@ -1,4 +1,4 @@
-import { Container, Image, Card, Col, Row } from 'react-bootstrap';
+import { Container, Image, Card, Col, Row, Alert } from 'react-bootstrap';
 
 const News = ({ noticias }) => {
   console.log(noticias)
@@ -23,7 +23,9 @@ const News = ({ noticias }) => {
                   </Col>
                 ))
               ) : (
-                <p>No hay noticias disponibles</p>
+                <Alert className='mt-3'  variant="light">
+                  There aren't any news available
+                </Alert>
               )
             }
         </Row>
