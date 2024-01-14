@@ -46,8 +46,8 @@ body {
 
 @media (min-width: 992px) {
   .img-new {
-    height: 450px;
-    width: 650px;
+    height: 200px;
+    width: 300px;
   }
 }
 
