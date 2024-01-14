@@ -1,9 +1,15 @@
+import { useEffect } from 'react';
 import { Form } from 'react-bootstrap'
 import News from "./News";
 
 const Formulario = ({ noticias, consultaApi, setElegirCategoria, elegirCategoria }) => {
 
-  /* quiero manejar el estado del formulario se usa el handle'y lo q quiero manejar' */
+
+  useEffect(() => {
+    consultaApi('top');
+  }, []);
+
+
   const handleCategoria = (e) => {
     setElegirCategoria(e.target.value)
     consultaApi(e.target.value)
@@ -19,7 +25,7 @@ const Formulario = ({ noticias, consultaApi, setElegirCategoria, elegirCategoria
         value={elegirCategoria}
         className='p-3'
         aria-label="Default select example">
-        <option>Category</option>
+        <option value="top">Category</option>
         <option value="business">Business</option>
         <option value="crime">Crime</option>
         <option value="domestic">Domestic</option>
@@ -33,7 +39,6 @@ const Formulario = ({ noticias, consultaApi, setElegirCategoria, elegirCategoria
         <option value="science">Science</option>
         <option value="sport">Sport</option>
         <option value="technology">Tecnology</option>
-        <option value="top">Top</option>
         <option value="tourism">Tourism</option>
         <option value="world">World</option>
       </Form.Select>
