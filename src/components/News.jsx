@@ -1,4 +1,5 @@
-import { Container, Image, Card, Col, Row, Alert } from 'react-bootstrap';
+import { Container, Image, Card, Col, Row, Alert, Button } from 'react-bootstrap';
+import {Link} from 'react-router-dom'
 
 const News = ({ noticias }) => {
   console.log(noticias)
@@ -19,6 +20,12 @@ const News = ({ noticias }) => {
                         {/* <p>{noticia.content}</p> */}
                         <p>Author: <em>{noticia.creator} - {noticia.country}</em></p>
                       </Card.Body>
+                      <Card.Footer className='text-center bg-dark'>
+                        <Button variant="dark" as={Link} to={noticia.Link}>
+                          Read all note
+                        </Button>
+                      </Card.Footer>
+
                     </Card>
                   </Col>
                 ))
