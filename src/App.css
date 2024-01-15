@@ -44,6 +44,12 @@ body {
   ;
 }
 
+.img-new {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 @media (min-width: 992px) {
   .img-new {
     height: 200px;
