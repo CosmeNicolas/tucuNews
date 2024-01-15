@@ -31,12 +31,13 @@ h1 {
 }
 
 body {
-  background-color: #D9D9D9;
+  background-color: #b5b5b6;
 }
 
 .barraPrincipal {
   color: #e6e4e4;
-  font-family: 'Pirata One', system-ui;
+  font-family: 'Grenze Gotisch',
+      serif;
 }
 
 .footer {
