@@ -41,7 +41,10 @@ body {
 
 .footer {
   background-color: #212427;
-  ;
+}
+
+.footer-card{
+  background-color: #4a5158;
 }
 
 @media (min-width: 992px) {
