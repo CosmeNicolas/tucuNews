@@ -1,6 +1,6 @@
 # The Tucu-News
 
-Cree un diario de noticias donde su descripcion al ver el mismo por preferencia personal quise que estuviera en ingles y mostrar solo los titulos del mismo con un filtrado de categorias por temas "
+Cree un diario donde se pueden visualizar diferentes noticias del todo el mundo 🗺️, eligiendo asi las noticias que queremos ver , como tanto las de su pais , por defecto quise mostrar noticias al abrir la aplicacion y aparecen las de estados unidos de américa. 
 
 ## Librerias y Framewroks 🎨
 
@@ -12,8 +12,6 @@ Cree un diario de noticias donde su descripcion al ver el mismo por preferencia 
 ## API - NesData
 - [NewsData](https://newsdata.io/)
 
-
-
 ## Deploy del Proyecto 
 
-- [TheTucuNews](https://thetucunews.netlify.app/)
+- [TheTucuNewsCategory](https://tucunews-category.netlify.app/)
