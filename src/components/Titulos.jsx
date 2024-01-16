@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 const Titulos = () => {
   return (
-    <Navbar fixed="top" expand="lg" className="py-3 footer" bg="dark" data-bs-theme="dark">
+    <Navbar fixed="top" expand="lg" className="py-3 footer"  data-bs-theme="dark">
       <Container>
         <Navbar.Brand href="#home" className="barraPrincipal ms-2">The Tucu-News</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" className='bg-gray' />

@@ -31,17 +31,22 @@ h1 {
 }
 
 body {
-  background-color: #b5b5b6;
+  background-color: #dedede;
 }
+
+.img-principal{
+  height: 100%;
+  width: 100%;
+}
+
 
 .barraPrincipal {
   color: #e6e4e4;
-  font-family: 'Grenze Gotisch',
-      serif;
+  font-family: 'Grenze Gotisch',serif;
 }
 
 .footer {
-  background-color: #212427;
+  background-color: #070808;
 }
 
 .footer-card{

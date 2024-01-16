@@ -18,7 +18,7 @@ const Formulario = ({ noticias, consultaApi, setElegirCategoria, elegirCategoria
 
   return (
     <>
-      <hr />
+      <hr className='hr' />
       <h1 className='text-center' >It's Happening  📰</h1>
       <Form.Select
         onChange={handleCategoria}
