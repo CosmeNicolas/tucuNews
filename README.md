@@ -1,6 +1,6 @@
 # The Tucu-News
 
-Cree un diario donde se pueden visualizar diferentes noticias del todo el mundo 🗺️, eligiendo asi las noticias que queremos ver , como tanto las de su pais , por defecto quise mostrar noticias al abrir la aplicacion y aparecen las de estados unidos de américa. 
+Cree un diario donde se pueden visualizar diferentes noticias del todo el mundo 🗺️, eligiendo asi las noticias que queremos ver , como tanto las de su pais , por defecto quise mostrar noticias al abrir la aplicacion y aparecen las noticias de estados unidos de américa. 
 
 ## Librerias y Framewroks 🎨
 
