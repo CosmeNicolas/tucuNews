@@ -2,19 +2,23 @@ import { useEffect } from 'react';
 import { Form } from 'react-bootstrap'
 import News from "./News";
 
-const Formulario = ({ noticias, consultaApi, setElegirCategoria, elegirCategoria }) => {
+const Formulario = ({ noticias, consultaApi, setElegirCategoria, elegirCategoria, setElegirPais, elegirPais }) => {
 
 
   useEffect(() => {
-    consultaApi('top');
-  }, []);
-
-
+    consultaApi(elegirCategoria, elegirPais);
+  }, [elegirCategoria, elegirPais]);
+  
   const handleCategoria = (e) => {
     setElegirCategoria(e.target.value)
-    consultaApi(e.target.value)
+   
   }
-
+  
+  const handlePais = (e)=>{
+    setElegirPais(e.target.value)
+    
+  }
+  
 
   return (
     <>
@@ -25,7 +29,7 @@ const Formulario = ({ noticias, consultaApi, setElegirCategoria, elegirCategoria
         value={elegirCategoria}
         className='p-3'
         aria-label="Default select example">
-        <option value="top">Category</option>
+        <option value="">Category</option>
         <option value="business">Business</option>
         <option value="education">Education</option>
         <option value="entertainment">Entertainment</option>
@@ -39,6 +43,20 @@ const Formulario = ({ noticias, consultaApi, setElegirCategoria, elegirCategoria
         <option value="tourism">Tourism</option>
         <option value="world">World</option>
       </Form.Select>
+      <Form.Select
+        onChange={handlePais}
+        value={elegirPais}
+        className='p-3'
+        aria-label="Default select example">
+        <option value="">Country</option>
+        <option value="australia">australia</option>
+        <option value="it">italy</option>
+        <option value="ireland">ireland</option>
+        <option value="ghana">ghana</option>
+        <option value="canada">canada</option>
+        <option value="united states of america">united states of america</option>
+        
+      </Form.Select> 
       <News noticias={noticias} />
     </>
   );
