@@ -8,10 +8,16 @@ const Formulario = ({ noticias, consultaApi, setElegirCategoria, elegirCategoria
   useEffect(() => {
     consultaApi(elegirCategoria, elegirPais);
   }, [elegirCategoria, elegirPais]);
+
+
+  useEffect(() => {
+    setElegirCategoria('top');
+    setElegirPais('us');
+    consultaApi('top', 'us');
+  }, []);
   
   const handleCategoria = (e) => {
     setElegirCategoria(e.target.value)
-   
   }
   
   const handlePais = (e)=>{
@@ -29,7 +35,7 @@ const Formulario = ({ noticias, consultaApi, setElegirCategoria, elegirCategoria
         value={elegirCategoria}
         className='p-3'
         aria-label="Default select example">
-        <option value="">Category</option>
+        <option value="top">Category</option>
         <option value="business">Business</option>
         <option value="education">Education</option>
         <option value="entertainment">Entertainment</option>
